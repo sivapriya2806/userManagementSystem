@@ -1,0 +1,42 @@
+<ion-content [fullscreen]="true">
+  <div class="login-container">
+    <div *ngIf="showSuccessMessage">
+      <ion-card style="--background: #e3eae6; padding: 10px">
+        <ion-card-header>
+          <ion-card-title style="color: black">Data Saved!</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content style="color: black">
+          Your data has been stored successfully!!
+        </ion-card-content>
+      </ion-card>
+    </div>
+    <h1 *ngIf="showForm">User Form</h1>
+    <br />
+    <form [formGroup]="postForm" *ngIf="showForm" (ngSubmit)="onPost()">
+      <ion-item>
+        <ion-input
+          type="text"
+          placeholder="Name"
+          formControlName="name"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          type="number"
+          placeholder="Age"
+          formControlName="age"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          type="number"
+          placeholder="Salary"
+          formControlName="salary"
+        ></ion-input>
+      </ion-item>
+
+      <ion-button type="submit" (click)="onPost()">Submit</ion-button>
+    </form>
+  </div>
+</ion-content>

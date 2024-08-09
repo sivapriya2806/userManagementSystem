@@ -1,0 +1,54 @@
+ion-header{
+    align-items: center;
+    display: flex;
+
+    ion-toolbar{
+        --background: #3b7a57 ;
+         height:70px;
+        h1{
+            
+            //font-size: 1.75rem;
+            margin-left: 10px;
+            display: flex;
+           margin-bottom: 20px;
+            color:white
+            
+
+        }
+    }
+}
+ion-card{
+    padding: 10px;
+    margin: 20px;
+     //background-color:#66c09f97 ;
+     --background:url('https://i.pinimg.com/564x/21/aa/7f/21aa7f93fd65f1965a28e54163d8e8a0.jpg') no-repeat center center / cover;
+     //--background:url('https://i.pinimg.com/564x/a6/a0/d1/a6a0d1be4715d7e5e360a0e72eb4828f.jpg')
+    ion-card-content{
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: rgb(6, 6, 6);
+       
+        
+    }
+    ion-card-title{
+        font-weight: bold;
+        font-size:2rem
+    }
+}
+
+.content-with-background{
+    //--background:#3a504897 ;
+    --background: url('https://i.pinimg.com/564x/a2/4d/79/a24d796b7d03aa7acfa341764038fad1.jpg') no-repeat center center / cover;
+    --background-attachment: fixed;
+    overflow-y: scroll;
+    height: 100%;
+}
+.edit-button{
+    --background:#00563f;
+}
+.delete-button{
+    --background:#454d32;
+}
+ion-fab-button{
+    --background:#00563f;
+}

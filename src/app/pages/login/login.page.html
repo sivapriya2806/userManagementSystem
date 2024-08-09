@@ -1,0 +1,28 @@
+<ion-content fullscreen class="login-background">
+  <div class="login-container">
+    <h1>Welcome Back!</h1>
+    <form action="" [formGroup]="loginForm" (ngSubmit)="onLogin()">
+      <div class="ion-padding">
+        <ion-item>
+          <ion-input
+            type="text"
+            placeholder="Email"
+            formControlName="email"
+          ></ion-input>
+          <ion-icon name="person-outline"></ion-icon>
+        </ion-item>
+        <ion-item>
+          <ion-input
+            type="password"
+            placeholder="Password"
+            formControlName="password"
+          ></ion-input>
+          <ion-icon name="lock-closed-outline"></ion-icon>
+        </ion-item>
+        <ion-button type="submit" expand="block" (click)="onLogin()"
+          >Login</ion-button
+        >
+      </div>
+    </form>
+  </div>
+</ion-content>

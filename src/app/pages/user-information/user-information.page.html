@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button style="color: white"></ion-menu-button>
+    </ion-buttons>
+    <h1>User Information</h1>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="content-with-background">
+  <div class="background-image">
+    <ion-card *ngFor="let users of user;index as i">
+      <ion-card-header>
+        <ion-card-title style="font-size: 1rem"
+          >{{users.firstName}} {{users.lastName}}</ion-card-title
+        >
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-icon name="location"></ion-icon>
+        {{ users.address}}
+        <br />
+
+        <ion-icon name="call"></ion-icon>
+        {{ users.phoneNumber}}
+        <br />
+        <ion-icon name="person"></ion-icon>
+        {{ users.gender}}
+      </ion-card-content>
+
+      <ion-button class="edit-button" (click)="editUser(i)">Edit</ion-button>
+      <ion-button class="delete-button" (click)="deleteUser(i)"
+        >Delete</ion-button
+      >
+    </ion-card>
+  </div>
+</ion-content>
+<ion-fab
+  horizontal="end"
+  vertical="bottom"
+  slot="fixed"
+  style="margin-bottom: 30px; margin-right: 4px"
+>
+  <ion-fab-button (click)="addNew()">
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab>

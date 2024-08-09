@@ -1,0 +1,43 @@
+.login-background {
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .login-container {
+    background-image: url('https://i.pinimg.com/564x/99/d7/3f/99d73f1e87d6b210b05f27603752002a.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    background-color: transparent; // Optional: Adds a semi-transparent overlay
+  }
+  
+  h1 {
+    color: black;
+  }
+  
+  .ion-padding{
+    padding: 20px;
+   
+}
+ion-item{
+    margin-bottom: 38px;
+    --background:#accfb7;
+    border-radius: 10px;
+}
+.input{
+    font-size: 300;
+    padding: 20px;
+    width:fit-content;
+}
+  
+  ion-button {
+    margin-top: 10px;
+   
+    --background:#35734a;
+  }
+  
